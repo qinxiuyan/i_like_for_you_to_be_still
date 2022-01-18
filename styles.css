@@ -1,0 +1,139 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    position: fixed;
+    right: 3%;
+    margin: 3vw; 
+    font-family: 'Lobster';
+}
+.heading:hover{
+    font-style: italic;
+    text-decoration: underline;
+}
+p{
+    font-size: 24px;
+    font-family: 'Nanum Brush Script';
+    
+   }
+.regular{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+@keyframes colors {
+    0%{
+        color: black;
+        transform: scale(1);
+    }
+
+    30%{
+       
+   }
+
+   60%{
+       
+   }
+
+
+   100%{
+       color: white;
+       transform: scale(2);
+   }
+}
+.absent{
+    font-size: 32px;
+    transition-duration: 3s;
+     animation-name:colors;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+     animation-direction: normal;
+     animation-play-state: running;
+}
+/*.absent:hover{
+    color: white;
+}*/
+.picture{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+    width: 90vw;
+    
+    
+    
+}
+@keyframes scales {
+    0%{
+        opacity: 100;
+        transform: scale(1);
+    }
+
+    30%{
+       
+       
+   }
+
+   60%{
+       
+   }
+
+
+   100%{
+       opacity: 0;
+       transform: scale(2);
+   }
+}
+.bird{
+    position: relative;
+    left: 27vw;
+    top: 18vw;
+    animation-name:scales;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-play-state: running;
+
+}
+.window{
+    overflow: hidden;
+    width: 100%;
+    transition-property:width;
+}
+.window:hover{
+    transition-duration: 3s;
+    width: 140%;
+    transform-origin: bottom left;
+}
+.first{
+    position: relative;
+    left: 70%;
+    top: 23vw;
+    width: 20vw;
+    
+}
+.second{
+    position: relative;
+    right: 25px;
+    top: 30vw;
+    width: 30vw;
+}
+.third{
+    position: relative;
+    left: 55vw;
+    top: 35vw;
+    background-color: white;
+    width: 30vw;
+
+}
+.last{
+    position: relative;
+    left: 50vw;
+    top: 40vw;
+    width: 30vw;
+}
